@@ -35,6 +35,6 @@ jobs:
       - name: Salvando os resultados dos testes
         uses: actions/upload-artifact@v4
         with:
-          if: always()
+          if: ${{ always() }}
           name: resultado-testes
           path: ./results
